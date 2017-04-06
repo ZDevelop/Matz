@@ -1,0 +1,50 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="matz.project.zur.matz.SettingsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Out of view updates"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Out of view updates" />
+
+    <TextView
+        android:text="Radius"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:id="@+id/textView2"
+        android:layout_marginTop="95dp"
+        android:layout_marginLeft="21dp" />
+
+    <TextView
+        android:text="Location"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:id="@+id/textView3"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="21dp" />
+
+    <Spinner
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="120dp" />
+
+    <EditText
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/radius"
+        android:layout_marginTop="85dp"
+        android:layout_marginLeft="120dp"
+        android:text="10" />
+
+</FrameLayout>

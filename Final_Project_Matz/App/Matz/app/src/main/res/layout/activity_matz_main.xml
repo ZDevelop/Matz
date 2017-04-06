@@ -1,0 +1,58 @@
+<android.support.v4.widget.DrawerLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <android.support.design.widget.CoordinatorLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frame1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="50dp"
+            android:id="@+id/Fragment_container">
+
+        </LinearLayout>
+
+
+
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:theme="?attr/actionBarTheme"
+            android:minHeight="?attr/actionBarSize"
+            android:id="@+id/mainToolbar"
+            app:title="Matz"
+            app:navigationIcon="@drawable/ic_menu_white_24dp"
+            android:nestedScrollingEnabled="false">
+            <ImageButton
+                android:layout_width="34dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/alertButton"
+                android:layout_gravity="right"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_notifications_white_24dp"
+                android:layout_marginRight="8dp" />
+        </android.support.v7.widget.Toolbar>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+    <ListView
+        android:id="@+id/navList"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|start"
+        android:background="#ffeeeeee">
+    </ListView>
+
+</android.support.v4.widget.DrawerLayout>
